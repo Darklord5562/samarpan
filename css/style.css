@@ -32,8 +32,8 @@ header{
 	justify-content: space-between;
 	align-items: center;
 	position: fixed;
-	background: #fff;
-	box-shadow: 2px 2px 5px #999999;
+	background: #EBEBEB;
+	/* box-shadow: 2px 2px 5px #999999; */
 	color: #fff;
 	padding: 0px 15px;
 	top: 0px;
