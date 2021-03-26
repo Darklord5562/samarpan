@@ -1,3 +1,4 @@
+// scrollbar managing
 window.addEventListener('scroll', function() {
   var Y = window.scrollY;
   if (Y > 0) {
@@ -8,7 +9,10 @@ window.addEventListener('scroll', function() {
     $('header').css('height', '70px');
   }
 });
-jQuery(document).ready(function() {
+
+
+
+$(document).ready(function() {
   $('.toggle').click(function() {
     $('sidebar').toggleClass('show');
     $(this).toggleClass('fa-bars');
@@ -22,7 +26,7 @@ jQuery(document).ready(function() {
     $('#overlay').toggleClass('overlay');
     $('.notice').hide();
   });
-  $('.hide-password').click(function() {
+  $('#password-toggle').click(function() {
     if ($('.password').attr('type') == "password") {
       $(this).toggleClass('fa-eye-slash');
       $(this).toggleClass('fa-eye');
@@ -33,9 +37,6 @@ jQuery(document).ready(function() {
       $('.password').attr('type', 'password');
     }
   });
-  $('.likes').click(function() {
-    $(this).toggleClass('red');
-  });
   $('#modal-cancel').click(function() {
     $('#overlay').removeClass('overlay');
     $('.notice').hide();
@@ -44,4 +45,17 @@ jQuery(document).ready(function() {
     $('#overlay').addClass('overlay');
     $('.notice').show();
   });
+  $('.fa-language').click(() => {
+    
+  });
+  
+  
+  
+  /*
+  $('#change-lang').click(() => {
+    console.log('hii');
+    var hi = $('#choose-lang');
+    alert(hi);
+  });
+  */
 });
