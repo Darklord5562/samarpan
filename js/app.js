@@ -45,17 +45,9 @@ $(document).ready(function() {
     $('#overlay').addClass('overlay');
     $('.notice').show();
   });
-  $('.fa-language').click(() => {
-    
-  });
+
+
+  // vanila javascript of dynsmic modal
+
   
-  
-  
-  /*
-  $('#change-lang').click(() => {
-    console.log('hii');
-    var hi = $('#choose-lang');
-    alert(hi);
-  });
-  */
 });
