@@ -10,3 +10,30 @@
       <button class="button" type="button">ok</button>
     </div>
   </modal>
+  <script type="text/javascript" charset="utf-8">
+    function sidebar() {
+      var sidebar = document.createElement('sidebar')
+      console.log('sidebar created')
+      var nameContenet = document.createElement('a')
+      console.log('name created')
+      nameContenet.innerText = 'Samarpan'
+      var name = document.createElement('name')
+      console.log(nameContenet)
+      name.appendChild(nameContent)
+
+      var navItems1 = document.createElement('items')
+      var navItems2 = document.createElement('items')
+      var navItems3 = document.createElement('items')
+      var navItems4 = document.createElement('items')
+      var navItems5 = document.createElement('items')
+
+
+      var food = document.createElement('a')
+      food.setAttribute('href', '#')
+      food.innerText = 'Food'
+
+      document.body.insertBefore(sidebar, document.getElementById('wrapper'))
+      sidebar.appendChild(navItems1);
+      navItems1.appendChild(name)
+    }
+  </script>

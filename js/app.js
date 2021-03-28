@@ -1,5 +1,5 @@
 // scrollbar managing
-window.addEventListener('scroll', function() {
+window.addEventListener('scroll', () => {
   var Y = window.scrollY;
   if (Y > 0) {
     $('header').addClass('shadow');
@@ -12,21 +12,21 @@ window.addEventListener('scroll', function() {
 
 
 
-$(document).ready(function() {
-  $('.toggle').click(function() {
+$(document).ready(() => {
+  $('.toggle').click(() => {
     $('sidebar').toggleClass('show');
     $(this).toggleClass('fa-bars');
     $(this).toggleClass('fa-times');
     $('#overlay').toggleClass('overlay');
   });
-  $('#overlay').click(function() {
+  $('#overlay').click(() => {
     $('sidebar').removeClass('show');
+    closeModal()
     $('.toggle').addClass('fa-bars');
     $('.toggle').removeClass('fa-times');
     $('#overlay').toggleClass('overlay');
-    $('.notice').hide();
   });
-  $('#password-toggle').click(function() {
+  $('#password-toggle').click(() => {
     if ($('.password').attr('type') == "password") {
       $(this).toggleClass('fa-eye-slash');
       $(this).toggleClass('fa-eye');
@@ -37,17 +37,20 @@ $(document).ready(function() {
       $('.password').attr('type', 'password');
     }
   });
-  $('#modal-cancel').click(function() {
-    $('#overlay').removeClass('overlay');
-    $('.notice').hide();
-  });
-  $('#donate').click(function() {
+  $('#login-submit').click(() => {
     $('#overlay').addClass('overlay');
-    $('.notice').show();
+    openModal();
   });
-
-
-  // vanila javascript of dynsmic modal
-
+  modalCancel.addEventListener('click', () => {
+    closeModal()
+    $('#overlay').removeClass('overlay');
+  })
+  modalOk.addEventListener('click', () => {
+    console.log('open')
+    closeModal()
+    $('#overlay').removeClass('overlay');
+  })
+  
+  
   
 });
