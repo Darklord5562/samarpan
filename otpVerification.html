@@ -24,10 +24,17 @@
   <div id="overlay"></div>
 
   <div id="wrapper" class="wrapper">
-    <?php
-    include('sidebar.php');
-    ?>
-    <button class="button" id="login-submit" type="submit">Login</button>
+    
+    <form class="forms" method="get" accept-charset="utf-8">
+       <h2>Enter your OTP here</h2>
+        <div class="inps">
+          <input type="text" name="name" id="name" required autocomplete="off" />
+          <span class="placeholder">Enter OTP here
+          </span>
+        </div>
+        <button class="button mt-10 btn-blk primary-btn" type="submit">Check otp</button>
+    </form>
+
   </div>
   <div id="my-div">
   </div>
