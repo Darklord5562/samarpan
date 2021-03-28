@@ -14,10 +14,9 @@ var modalBody = document.createElement("div")
 var modalActionBtn = document.createElement("div")
 var modalCancel = document.createElement("button")
 var modalOk = document.createElement("button")
-// adding className
+// adding css className
 modalCancel.classList.add("button")
 modalOk.classList.add("button")
-
 modalActionBtn.classList.add("modal-action-btn")
 modalBody.classList.add("modal-body")
 modalHeader.classList.add('modal-header')
@@ -29,13 +28,13 @@ modalOk.setAttribute('type', 'button')
 modalCancel.innerText = "cancel"
 modalCancel.setAttribute('type', 'button')
 // appending the element to its parent
+modal.appendChild(modalHeader)
+modal.appendChild(modalBody)
+modal.appendChild(modalActionBtn)
+modalActionBtn.appendChild(modalCancel)
+modalActionBtn.appendChild(modalOk)
+
 function openModal() {
-  modal.appendChild(modalHeader)
-  modal.appendChild(modalBody)
-  modal.appendChild(modalActionBtn)
-  modalActionBtn.appendChild(modalCancel)
-  modalActionBtn.appendChild(modalOk)
-  // adding the element to the document
   wrapper.append(modal);
 }
 
@@ -43,20 +42,47 @@ function closeModal() {
   modal.remove();
 }
 
+
+
 // sidebar element and functions
-var sidrbar = document.createElement('sidebar')
+var sidebar = document.createElement('sidebar')
+var nameSpace = document.createElement('a')
+var nameH2 = document.createElement('h2')
+var food = document.createElement('a')
+var clothes = document.createElement('a')
+var blood = document.createElement('a')
+var donate = document.createElement('a')
+var account = document.createElement('a')
+
+nameH2.innerText = 'ସମର୍ପଣ'
+food.innerText = 'Food'
+clothes.innerText = 'Clothes'
+blood.innerText = 'Blood'
+donate.innerText = 'Donate Us'
+account.innerText = 'Account'
 
 
+food.setAttribute('href', 'foodCollection.html')
+clothes.setAttribute('href', 'clothesCollection.html')
+blood.setAttribute('href', 'donateBlood.html')
+donate.setAttribute('href', 'donateUs.html')
+account.setAttribute('href', 'account.html')
 
 
+nameSpace.appendChild(nameH2)
+sidebar.appendChild(nameSpace)
+sidebar.appendChild(food)
+sidebar.appendChild(clothes)
+sidebar.appendChild(blood)
+sidebar.appendChild(donate)
+sidebar.appendChild(account)
 
-
+function createSidebar() {
+  document.body.appendChild(sidebar)
+}
 
 
 /*
-
-
-
   <sidebar>
     <name><a><h2>ସମର୍ପଣ</h2></a></name>
     <items><a href="#">Food</a></items>

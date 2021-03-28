@@ -9,12 +9,10 @@ window.addEventListener('scroll', () => {
     $('header').css('height', '70px');
   }
 });
-
-
-
 $(document).ready(() => {
+  createSidebar()
   $('.toggle').click(() => {
-    $('sidebar').toggleClass('show');
+    $('sidebar').addClass('show');
     $(this).toggleClass('fa-bars');
     $(this).toggleClass('fa-times');
     $('#overlay').toggleClass('overlay');
@@ -49,6 +47,11 @@ $(document).ready(() => {
     console.log('open')
     closeModal()
     $('#overlay').removeClass('overlay');
+  });
+  // form handling
+  $('#register-form').submit(function(event){
+    $(this).hide()
+    alert('hii')
   })
   
   
