@@ -49,11 +49,6 @@ $(document).ready(() => {
     $('#overlay').removeClass('overlay');
   });
   // form handling
-  $('#register-form').submit(function(event){
-    $(this).hide()
-    alert('hii')
-  })
   
-  
-  
+  let x = document.body.clientWidth;
 });

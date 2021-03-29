@@ -22,19 +22,36 @@
     <i class="toggle fa fa-bars"></i>
   </header id="header">
   <div id="overlay"></div>
-
   <div id="wrapper" class="wrapper">
-    
-    <form class="forms" method="get" accept-charset="utf-8">
-       <h2>Enter your OTP here</h2>
+    <form class="form" action="" method="get" accept-charset="utf-8">
+      <fieldset class="forms">
+        <legend>
+          <h3>Personal Information</h3>
+        </legend>
         <div class="inps">
           <input type="text" name="name" id="name" required autocomplete="off" />
-          <span class="placeholder">Enter OTP here
+          <span class="placeholder">Full Name<span class="mandatory">*</span>
           </span>
         </div>
-        <button class="button mt-10 btn-blk primary-btn" type="submit">Check otp</button>
+        <div class="inps">
+          <input type="text" name="name" id="name" required autocomplete="off" />
+          <span class="placeholder">E-mail<span class="mandatory">*</span>
+          </span>
+        </div>
+        <div class="inps-grp">
+          <div class="inps">
+            <input col="half" type="text" name="name" id="name" required autocomplete="off" />
+            <span class="placeholder">E-mail<span class="mandatory">*</span>
+            </span>
+          </div>
+          <div class="inps">
+            <input type="text" name="name" id="name" required autocomplete="off" />
+            <span class="placeholder">E-mail<span class="mandatory">*</span>
+            </span>
+          </div>
+        </div>
+      </fieldset>
     </form>
-
   </div>
   <script src="js/app.js"></script>
   <script src="js/comp.js"></script>
