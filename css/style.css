@@ -47,7 +47,13 @@ h3,
 h4,
 h5,
 h6,
-bd {
+bd,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6{
   font-family: "poppinsE", sans-serif;
 }
 
@@ -195,7 +201,6 @@ brand {
   color: #B70000;
   font-family: "poppinsE", sans-serif;
   font-size: 30px;
-  /* font-style: "poppinsE", sans-serif; */
   font-weight: 900;
 }
 
@@ -214,6 +219,9 @@ brand {
   border: 2px solid #5462FF;
   width: calc(100% - 34px);
   padding: 14px;
+}
+input[type="date"]{
+  background: #FFFFFF;
 }
 
 .inps input:focus+.placeholder,
@@ -411,6 +419,18 @@ modal {
 .fa-check-circle {
   color: #019F04;
 }
+
+select{
+  height: 45px;
+  width: calc(50% + 32px);
+  outline: none;
+  border-radius: 5px;
+  background: #FFFFFF;
+  border: 1px solid #DCDCDC;
+}
+
+
+
 
 
 

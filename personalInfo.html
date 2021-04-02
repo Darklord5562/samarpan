@@ -23,37 +23,62 @@
   </header id="header">
   <div id="overlay"></div>
   <div id="wrapper" class="wrapper">
-    <form class="form" action="" method="get" accept-charset="utf-8">
+    <form id="info" class="form" action="" method="get" accept-charset="utf-8">
       <fieldset class="forms">
         <legend>
           <h3>Personal Information</h3>
         </legend>
         <div class="inps">
           <input type="text" name="name" id="name" required autocomplete="off" />
-          <span class="placeholder">Full Name<span class="mandatory">*</span>
+          <span class="placeholder">Full Name<span class="mandatory"> *</span>
           </span>
         </div>
         <div class="inps">
           <input type="text" name="name" id="name" required autocomplete="off" />
-          <span class="placeholder">E-mail<span class="mandatory">*</span>
+          <span class="placeholder">Father's Name<span class="mandatory"> *</span>
           </span>
         </div>
+        <span class="h2">Date Of Birth</span>
         <div class="inps-grp">
           <div class="inps">
-            <input col="half" type="text" name="name" id="name" required autocomplete="off" />
-            <span class="placeholder">E-mail<span class="mandatory">*</span>
+            <input type="text" inputmode="numeric" id="day" required autocomplete="off" />
+            <span class="placeholder">Day<span class="mandatory"> *</span>
             </span>
           </div>
+          
+          <select class="mt-10" name="" id="month">
+            <option value="01">January</option>
+            <option value="02">February</option>
+            <option value="03">March</option>
+            <option value="04">April</option>
+            <option value="05">May</option>
+            <option value="06">June</option>
+            <option value="07">July</option>
+            <option value="08">August</option>
+            <option value="09">September</option>
+            <option value="10">October</option>
+            <option value="11">November</option>
+            <option value="12">December</option>
+          </select>
+          
           <div class="inps">
-            <input type="text" name="name" id="name" required autocomplete="off" />
-            <span class="placeholder">E-mail<span class="mandatory">*</span>
+            <input type="text" inputmode="numeric" id="year" required autocomplete="off" />
+            <span class="placeholder">Year<span class="mandatory"> *</span>
             </span>
           </div>
+          
         </div>
+        <div class="inps">
+          <input type="text" name="name" id="name" required autocomplete="off" />
+          <span class="placeholder">Occupation<span class="mandatory"> *</span>
+          </span>
+        </div>
+        <button id="submit" class="button" type="submit">Login</button>
       </fieldset>
     </form>
   </div>
   <script src="js/app.js"></script>
+  <script src="js/form.js"></script>
   <script src="js/comp.js"></script>
 </body>
 

@@ -49,6 +49,13 @@ $(document).ready(() => {
     $('#overlay').removeClass('overlay');
   });
   // form handling
-  
+
+
+  document.getElementById('info').addEventListener('submit', function(e){
+    e.preventDefault();
+  })
+
+
   let x = document.body.clientWidth;
+  console.log(x)
 });

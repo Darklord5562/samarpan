@@ -1,13 +1,15 @@
 //globals
 var wrapper = document.getElementById("wrapper")
 
-
-
-
 //modal box element and functioncs
-var modalHeaderMsg = "Confirm"
-var modalBodyMsg = "Are you sure, The information you entered are best to your knowledge ?";
+//
+//
+//
+//
+//
 //creating element
+var modalHeaderMsg
+var modalBodyMsg
 var modal = document.createElement("modal")
 var modalHeader = document.createElement("div")
 var modalBody = document.createElement("div")
@@ -37,7 +39,6 @@ modalActionBtn.appendChild(modalOk)
 function openModal() {
   wrapper.append(modal);
 }
-
 function closeModal() {
   modal.remove();
 }
@@ -82,17 +83,6 @@ function createSidebar() {
 }
 
 
-/*
-  <sidebar>
-    <name><a><h2>ସମର୍ପଣ</h2></a></name>
-    <items><a href="#">Food</a></items>
-    <items><a href="#">Clothes</a></items>
-    <items><a href="#">Blood</a></items>
-    <items><a href="#">Donate</a></items>
-    <items><a href="#">Account</a></items>
-  </sidebar>
 
 
-
-
-*/
+// var modalHeaderMsg and modalBodyMsg is used for assigning modal elements
