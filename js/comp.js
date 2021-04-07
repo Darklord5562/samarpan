@@ -8,8 +8,8 @@ var wrapper = document.getElementById("wrapper")
 //
 //
 //creating element
-var modalHeaderMsg
-var modalBodyMsg
+function openModal(){
+
 var modal = document.createElement("modal")
 var modalHeader = document.createElement("div")
 var modalBody = document.createElement("div")
@@ -36,7 +36,6 @@ modal.appendChild(modalActionBtn)
 modalActionBtn.appendChild(modalCancel)
 modalActionBtn.appendChild(modalOk)
 
-function openModal() {
   wrapper.append(modal);
 }
 function closeModal() {

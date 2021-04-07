@@ -37,6 +37,8 @@ $(document).ready(() => {
   });
   $('#login-submit').click(() => {
     $('#overlay').addClass('overlay');
+    var modalHeaderMsg = 'hello'
+    var modalBodyMsg = 'modal content'
     openModal();
   });
   modalCancel.addEventListener('click', () => {
@@ -55,7 +57,13 @@ $(document).ready(() => {
     e.preventDefault();
   })
 
-
-  let x = document.body.clientWidth;
-  console.log(x)
+function print(){
+  var x = 'hello'
+    document.getElementById('display-message').innerText= x
+}
+  
+  
+  
+  
+  
 });

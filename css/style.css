@@ -27,7 +27,22 @@ body {
   font-size: 15px;
   font-family: "poppins", sans-serif;
 }
-
+.display-messege-container{
+  display: grid;
+  place-items: center;
+}
+.display-messege{
+  width: 80%;
+  display: none;
+  max-width: 360px;
+  border: 1px solid rgb(182, 212, 255);
+  background: rgb(207, 225, 255);
+  border-radius: 5px;
+  color: rgb(8, 66, 152);
+  font-weight: bold;
+  text-align: center;
+  padding: 15px;
+}
 fab {
   position: fixed;
   bottom: 20px;
@@ -428,7 +443,6 @@ select{
   background: #FFFFFF;
   border: 1px solid #DCDCDC;
 }
-
 
 
 

@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/fontawesome.min.css">
   <link rel="stylesheet" href="css/all.min.css">
-  <script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+  <!---<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>---->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 
 <body>
@@ -23,18 +24,23 @@
   </header id="header">
   <div id="overlay"></div>
   <div id="wrapper" class="wrapper">
-    <form id="info" class="form" action="" method="get" accept-charset="utf-8">
+    <div class="display-messege-container">
+      <div id="display-message" class="display-messege">
+        
+      </div>
+    </div>
+    <form id="info" class="form" method="get" accept-charset="utf-8">
       <fieldset class="forms">
         <legend>
           <h3>Personal Information</h3>
         </legend>
         <div class="inps">
-          <input type="text" name="name" id="name" required autocomplete="off" />
+          <input type="text" name="fullName" required autocomplete="off" />
           <span class="placeholder">Full Name<span class="mandatory"> *</span>
           </span>
         </div>
         <div class="inps">
-          <input type="text" name="name" id="name" required autocomplete="off" />
+          <input type="text" name="fathersName" required autocomplete="off" />
           <span class="placeholder">Father's Name<span class="mandatory"> *</span>
           </span>
         </div>
@@ -45,8 +51,7 @@
             <span class="placeholder">Day<span class="mandatory"> *</span>
             </span>
           </div>
-          
-          <select class="mt-10" name="" id="month">
+          <select class="mt-10" name="month" id="month">
             <option value="01">January</option>
             <option value="02">February</option>
             <option value="03">March</option>
@@ -60,20 +65,18 @@
             <option value="11">November</option>
             <option value="12">December</option>
           </select>
-          
           <div class="inps">
             <input type="text" inputmode="numeric" id="year" required autocomplete="off" />
             <span class="placeholder">Year<span class="mandatory"> *</span>
             </span>
           </div>
-          
         </div>
         <div class="inps">
-          <input type="text" name="name" id="name" required autocomplete="off" />
+          <input type="text" name="profession" required autocomplete="off" />
           <span class="placeholder">Occupation<span class="mandatory"> *</span>
           </span>
         </div>
-        <button id="submit" class="button" type="submit">Login</button>
+        <button id="infoSubmit" class="button mt-10" type="submit">Login</button>
       </fieldset>
     </form>
   </div>
